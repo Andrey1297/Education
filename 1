@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int length, width;
+    cout << "Введіть довжину прямокутника: ";
+    cin >> length;
+    cout << "Введіть ширину прямокутника: ";
+    cin >> width;
+
+    int area = length * width;
+    int perimeter = 2 * (length + width);
+
+    double area_d = static_cast<double>(area);
+    double perimeter_d = static_cast<double>(perimeter);
+
+    cout << "Площа: " << area_d << endl;
+    cout << "Периметр: " << perimeter_d << endl;
+
+    cout << "Сума: " << area_d + perimeter_d << endl;
+    cout << "Різниця: " << area_d - perimeter_d << endl;
+    cout << "Добуток: " << area_d * perimeter_d << endl;
+    cout << "Частка: " << area_d / perimeter_d << endl;
+
+    cout << "Адреса довжини: " << &length << endl;
+    cout << "Адреса ширини: " << &width << endl;
+    cout << "Адреса площі: " << &area << endl;
+    cout << "Адреса периметра: " << &perimeter << endl;
+
+    return 0;
+}
